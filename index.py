@@ -1,11 +1,3 @@
-# Take a number between 1 and 13 representing a card as input. Print out the card name as output. If the given card is:
-
-# 1: print “Drew an Ace”
-# 2-10: print “Drew a [number]” (ex: if the number is 5, it'll print “Drew a 5”). If the card is an 8 then print out "an" instead of "a" to be grammatically correct.
-# 11: print “Drew a Jack”
-# 12: print “Drew a Queen”
-# 13: print “Drew a King”
-# Any other number: print "BAD CARD"
 
 #Print Card Name
 card_number = int(input(" "))
