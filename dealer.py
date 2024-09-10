@@ -11,12 +11,15 @@ for i in range(2):
     elif card_rank == 11:
         card_name = "Jack"
         card_value = 10
+
     elif card_rank == 12:
         card_name = "Queen"
         card_value = 10
+
     elif card_rank == 13:
         card_name = "King"
         card_value = 10
+
     else:
         card_name = str(card_rank)
         card_value = card_rank
@@ -39,16 +42,19 @@ while hand_value < 17:
     if card_rank == 1:
         card_name = "Ace"
         card_value = 11
-        aces += 1  
+         
     elif card_rank == 11:
         card_name = "Jack"
         card_value = 10
+
     elif card_rank == 12:
         card_name = "Queen"
         card_value = 10
+
     elif card_rank == 13:
         card_name = "King"
         card_value = 10
+        
     else:
         card_name = str(card_rank)
         card_value = card_rank
