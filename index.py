@@ -1,23 +1,32 @@
 
-#Print Card Name
-card_number = int(input(" "))
-if card_number >= 1 and card_number <= 13:
-    if card_number == 1:
-        print("Drew an Ace")
-    elif card_number >= 2 and card_number <= 7:
-        print("Drew a " + str(card_number))
-    elif card_number == 8:
-        print("Drew an 8")
-    elif card_number >= 9 and card_number <= 10:
-        print("Drew a " + str(card_number))
-    elif card_number == 11:
-        print("Drew a Jack")
-    elif card_number == 12: 
-        print("Drew a Queen")
-    else:
-        print("Drew a King")
+card_rank = int(input())
+
+if card_rank == 1:
+  # A 1 stands for an ace.
+  card_name = "Ace"
+elif card_rank == 11:
+  # An 11 stands for a jack.
+  card_name = "Jack"
+elif card_rank == 12:
+  # A 12 stands for a queen.
+  card_name = "Queen"
+elif card_rank == 13:
+  # A 13 stands for a king.
+  card_name = "King"
 else:
-    print("BAD CARD") 
+  # All other cards are named by their
+  # number, or rank.
+  card_name = str(card_rank)
+
+if card_rank == 1 or card_rank == 8:
+  drew_prefix = 'Drew an '
+else:
+  drew_prefix = 'Drew a '
+
+if card_rank < 1 or card_rank > 13:
+  print('BAD CARD')
+else:
+  print(drew_prefix + card_name)
     
     
     

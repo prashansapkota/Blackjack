@@ -1,10 +1,17 @@
-card_number = int(input("Enter card number: "))
-if card_number >= 1 and card_number <= 13:
-    if card_number == 1: 
-        print("Your hand value is 11.")
-    elif card_number >= 2 and card_number <= 9:
-        print("Your hand value is " + str(card_number) + ".")
-    else:
-        print("Your hand value is 10.")
+card_rank = int(input())
+
+if card_rank == 11 or card_rank == 12 or card_rank == 13:
+  # Jacks, Queens, and Kings are worth 10.
+  card_value = 10
+elif card_rank == 1:
+  # Aces are worth 11.
+  card_value = 11
 else:
-       print("BAD CARD")
+  # All other cards are worth the same as
+  # their rank.
+  card_value = card_rank
+
+if card_rank > 13 or card_rank < 1:
+  print('BAD CARD')
+else:
+  print('Your hand value is ' + str(card_value) + '.')
